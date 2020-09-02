@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>regularexpressions</title>
+</head>
+<body>
+<h2>DETAILS</h2>
+<form>
+<fieldset>
+<legend>personal</legend>
+<label for="fname">First name:</label><br>
+<input type="text" id="Name" name="fname" ><br>
+<label for="lnamae">Lastname:</label><br>
+<input type="text id="lname" name="lname" value="Battula"><br>
+<input type="button" value="submit" onclick="Val()"/>
+</feildset>
+</form>
+<script type="text/javascript">
+    function Val() {
+        var letter =  /^[A-Za-z]+$/;
+        var isValid = letter.test(document.getElementById("Name").value);
+        if (!isValid) {
+            alert("Only Alphabets are allowed in Name.");
+        }
+ 
+        return isValid;
+    }
+</script>
+</body>
+</html>
