@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+</head>
+<body onclick="myFunction(event)">
+<button onclick="this.innerHTML=Date()">Date</button>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="2" src="bts.jpg" alt="bts" width="175px" height="175px">
+<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+<p>this text is editable</p>
+<script>
+function bigImg(x) {
+	x.style.width= "200px";
+	x.style.height= "200px";
+}
+function normalImg(x) {
+	x.style.height= "175px"
+	x.style.width= "175px"
+}
+function myFunction(event) {
+	alert(event.target.nodeName);
+}
+document.designMode= "on";
+</script>
+</body>
+<html>
