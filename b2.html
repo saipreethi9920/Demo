@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Hide or show HTML elements
+    </title> 
+
+    <style> 
+            .preeths { 
+             display: block;
+              margin-left: auto;
+              margin-right: auto;
+         width: 50%; 
+    </style> 
+</head> 
+
+<body> 
+<center>
+        <div class="preeths"> 
+<img src="bts.jpg" alt="bts" border="2px"  width:"500px" height="450px";>
+        </div> 
+
+        <p> 
+            Click the buttons to show 
+            or hide
+        </p> 
+
+        <button onclick="showElement()"> 
+            Show
+        </button> 
+
+        <button onclick="hideElement()"> 
+            Hide 
+        </button> 
+</center>
+
+    <script type="text/javascript"> 
+        function showElement() { 
+            element = document.querySelector('.preeths'); 
+            element.style.visibility = 'visible'; 
+        } 
+
+        function hideElement() { 
+            element = document.querySelector('.preeths'); 
+            element.style.visibility = 'hidden'; 
+        } 
+    </script> 
+</body> 
+
+</html>
